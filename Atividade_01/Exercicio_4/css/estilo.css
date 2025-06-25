@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#quadrado {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    margin: 20px auto;
+    border: 2px solid #000;
+}
+
+.botoes button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

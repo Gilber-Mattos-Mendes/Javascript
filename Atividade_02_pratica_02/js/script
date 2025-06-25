@@ -1,0 +1,19 @@
+const corFundo = document.getElementById('corFundo');
+const corTexto = document.getElementById('corTexto');
+const corCaixa = document.getElementById('corCaixa');
+
+const container = document.body;
+const colorBox = document.getElementById('colorBox');
+const boxText = document.getElementById('TextoCaixa');
+
+bgColorInput.addEventListener('input', () => {
+  container.style.backgroundColor = corFundo.value;
+});
+
+textColorInput.addEventListener('input', () => {
+  boxText.style.color = corTexto.value;
+});
+
+boxColorInput.addEventListener('input', () => {
+  colorBox.style.backgroundColor = corCaixa.value;
+});

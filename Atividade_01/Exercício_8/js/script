@@ -1,0 +1,17 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const entrada = document.getElementById('entrada');
+    const botao = document.getElementById('btnDado');
+    const saida = document.getElementById('resposta');
+
+    botao.addEventListener('click', function () {
+        if (parseFloat(entrada.value) == entrada.value) {
+            saida.textContent = `"${entrada.value}" é um número!`;
+        }
+        else if ((entrada.value === "true") || (entrada.value === "false")) {
+            saida.textContent = `"${entrada.value}" é um booleano!`;
+        }
+        else {
+            saida.textContent = `"${entrada.value}" é uma string!`;
+        }
+    });
+});
