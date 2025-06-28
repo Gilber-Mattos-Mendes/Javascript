@@ -1,0 +1,24 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const entrada = document.getElementById('distancia');
+    const botao = document.getElementById('btnVerificar');
+    const saida = document.getElementById('resultado');
+    
+
+botao.addEventListener('click', function () {
+
+    const distancia = parseInt(entrada.value);
+
+    if (distancia <= 200) {
+        valor_distancia_1 = distancia * 0.70
+        saida.textContent = `O valor da sua passagem é: R$${valor_distancia_1.toFixed(2)}.`;
+    }
+    else if (distancia > 200) {
+        valor_distancia_2 = distancia * 0.40
+        saida.textContent = `O valor da sua passagem é: R$${valor_distancia_2.toFixed(2)}`;
+    }
+    else {
+        saida.textContent = `Digite uma distância válida!`
+    }
+    
+})
+})

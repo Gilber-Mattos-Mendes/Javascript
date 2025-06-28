@@ -1,0 +1,19 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const entrada = document.getElementById('ano');
+    const botao = document.getElementById('btnVerificar');
+    const saida = document.getElementById('resultado');
+    
+
+botao.addEventListener('click', function () {
+
+    const ano = parseInt(entrada.value);
+
+    if ((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)) {
+        saida.textContent = `O ano ${ano} é bissexto!`        
+    }
+    else {
+        saida.textContent = `O ano ${ano} não é bissexto!`
+    }
+   
+})
+})

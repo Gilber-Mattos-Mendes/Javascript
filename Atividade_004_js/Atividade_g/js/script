@@ -1,0 +1,24 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const entrada1 = document.getElementById('medida1');
+    const entrada2 = document.getElementById('medida2')
+    const entrada3 = document.getElementById('medida3')
+    const botao = document.getElementById('btnVerificar');
+    const saida = document.getElementById('resultado');
+    
+
+botao.addEventListener('click', function () {
+
+    const medida1 = parseFloat(entrada1.value);
+    const medida2 = parseFloat(entrada2.value);
+    const medida3 = parseFloat(entrada3.value);
+
+    if (medida1 + medida2 > medida3 && medida1 + medida3 > medida2 && medida2 + medida3 > medida1) {
+         saida.textContent = `As medidas formam um triangulo!`
+    }
+    else {
+        saida.textContent = `As medidas não formam um triangulo!`
+    }
+    
+   
+})
+})

@@ -1,0 +1,27 @@
+header {
+    background-color: rgb(73, 80, 87);
+    color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    margin:auto;
+    background-color:rgb(139, 157, 175);
+}
+
+main {
+    background-color:rgb(139, 157, 175);
+    margin-top: 80px;
+    text-align: center;
+}
+
+#btnCalcular {
+    padding: 20px;
+    background-color:aqua;
+    font-size: larger;
+}
+
+#btnCalcular:hover {
+    background-color:yellow;
+}

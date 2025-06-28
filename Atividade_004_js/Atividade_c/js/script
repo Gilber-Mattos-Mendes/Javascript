@@ -1,0 +1,19 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const entrada = document.getElementById('velocidade');
+    const botao = document.getElementById('btnVerificar');
+    const saida = document.getElementById('resultado');
+    
+
+botao.addEventListener('click', function () {
+
+    const velocidade = parseInt(entrada.value);
+
+    if (velocidade > 60) {
+        saida.textContent = `ALERTA!! Velocidade ${velocidade}km excedida`;
+    }
+    else {
+        saida.textContent = `${velocidade} Dentro do limite, BOA VIAGEM!!`;
+    } 
+        
+})
+})

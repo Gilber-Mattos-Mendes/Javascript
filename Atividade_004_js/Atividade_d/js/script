@@ -1,0 +1,27 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const entrada = document.getElementById('salario');
+    const botao = document.getElementById('btnVerificar');
+    const saida = document.getElementById('resultado');
+    
+
+botao.addEventListener('click', function () {
+
+    const salario = parseInt(entrada.value);
+
+    if (salario < 1000) {
+        let salario1000 = salario + (salario * 0.1) 
+        saida.textContent = `${salario1000}`;
+    }
+    else if (salario > 1500) {
+        let salario1500 = salario + (salario * 0.05)
+        saida.textContent = `${salario1500}`;
+    }
+    else if (salario <= 0){
+        saida.textContent = `Digite um Valor que não seja 0!`
+    }
+    else {
+        saida.textContent = `Seu salário não ganhou aumentos.`
+    }
+    
+})
+})
